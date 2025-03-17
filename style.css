@@ -1,0 +1,126 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #37e2ee, #161515); /* Deep Purple & Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    color:#f9f3f4; /* Soft Neon Pink */
+}
+
+/* Heading */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    color: #f9f3f4;
+}
+
+/* Main Container - Glassmorphism */
+.main-container {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(251, 251, 250, 0.37);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Move Counter */
+#heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f9f3f4;
+    margin-bottom: 15px;
+}
+
+/* Game Images */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    color:#f9f3f4;
+    text-shadow: 1px 1px 5px rgba(255, 204, 112, 0.5);
+}
+
+/* Image Blocks with Neon Glow */
+.my-image,
+.random,
+.img1,
+.img2,
+.img3 {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Hover Effect with Neon Glow */
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #f1f4f3, 0 0 30px rgba(26, 188, 156, 0.4); /* Aqua Glow */
+    cursor: pointer;
+}
+
+/* Result Box */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color:#f9f3f4;
+    margin: 10px 0;
+    padding: 10px;
+    text-shadow: 0 0 8px rgba(255, 204, 112, 0.8);
+}
+
+/* Reset Button - Neon Effect */
+#btn {
+    background: linear-gradient(45deg, #4ac0c0, #87a756); /* Reddish-Orange */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 204, 112, 0.6);
+}
+
+#btn:hover {
+    background: linear-gradient(45deg, #ab6666, #ff4e50);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 204, 112, 0.9);
+}
