@@ -7,6 +7,9 @@ let randomImg = document.createElement('img')
 
 let matchRes = document.createElement('p')
 document.getElementById('result').appendChild(matchRes)
+    
+
+
 
 img1.src = '1.png'
 img2.src = '2.png'
