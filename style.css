@@ -16,7 +16,21 @@ body {
     flex-direction: column;
     color:#f9f3f4; /* Soft Neon Pink */
 }
-
+.logo{
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 4rem;
+    height: 4rem
+}
+.logo h4{
+    font-size: 2rem;
+    color: #fff;
+}
 /* Heading */
 h2 {
     font-size: 32px;
@@ -123,4 +137,9 @@ img {
     background: linear-gradient(45deg, #ab6666, #ff4e50);
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(255, 204, 112, 0.9);
+}
+@media(max-width:567px){
+    .logo h4{
+        font-size: 1.5rem;
+    }
 }
